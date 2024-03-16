@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://dekatutorial.github.io/styleGombalin.css" />
+    <link rel="stylesheet" href="https://dekatutorial.github.io/stylePopUp.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title></title> </head> <body id="body"> <div class="preload"><p>Loading Ayaaaa.... :p</p></div> <div class="open"> <div> <div class="lope" onclick="ilang()"> <i class="love material-icons-sharp"> favorite </i> </div> <h3>Click on the Love</h3> </div> </div> <div id="bg"></div> <img src="" alt="" id="fotoku" />
+<script> function popupku() {
+  var body = document.querySelector("body");      
+  var pWm = document.createElement("a");
+  pWm.setAttribute("href", "");
+  pWm.setAttribute("style", "text-decoration: none; color: white; opacity: .5; position: fixed; bottom : 10px; left: 10px");
+  pWm.innerHTML = "";
+  body.appendChild(pWm);
+}</script>
+
+<h2 id="hai">Hi あや</h2>
+<h3 id="hia">:3</h3>
+
+<div id="slider">
+
+<p>Hi Aya, Swipe right !</p>
+<p>How amazing you look today!</p>
+<p>You look gorgeous.</p>
+<p>You are a nice person.</p>
+<p>I’m so proud of you.</p>
+
+
+<p>Click on that fire! <span>🔥</span></p>
+
+</div> </body> <script>
+
+musik = "lgu.mp3";
+foto = "gip11.gif";
+background = "beb.jpeg";
+noWhatsapp = "6289517120132";
+
+async function popUp() {
+
+await swalo.fire({ title: "You must be grateful for your life", imageUrl: "hello-kitty.gif" });
+await swalo.fire({ title: "If you need anything just tell me, I'll help if I can", imageUrl: "sanrio.gif" });
+await swalo.fire({ title: "I'm not the best but I always try to be better for you", imageUrl: "asdad.gif" });
+await swalo.fire({ title: "If the world is too boring for you, I will kill this world", imageUrl: "kasa.gif" });
+
+
+kirimPesan();
+
+} $(window).on("load", function () { $(".preload").fadeOut("slow"); }); var audio = new Audio(musik); audio.autoplay = true; audio.loop = true; bg.style = 'background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("' + background + '");'; fotoku.src = foto; popupku(); var swalo = Swal.mixin({ allowOutsideClick: false }); async function kirimPesan() { var { value: pesan } = await swalo.fire({ title: "Do you want Some Flowers? type YES then Send", input: "text", confirmButtonText: "Send" }); if (pesan) { await swalo.fire("Click OK"); location.assign("https://akassakaaa.github.io/ayaaa.github.io/"); } else { await swalo.fire({ confirmButtonText: "Iya deh", title: "CANNOT BE EMPTY :(" }); kirimPesan(); } } document.querySelector("span").addEventListener("click", function () { popUp(); }); var open = document.querySelector(".open"); function ilang() { audio.play(); open.style = "transition: 1.5s ease-out all; opacity: 0; transform: scale(100) translateY(-20px); filter: brightness(0);"; setTimeout(function () { open.style = "display:none;"; }, 1500); setTimeout(function () { fotoku.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px) scale(1);"; }, 500); setTimeout(function () { hai.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px);"; }, 1400); setTimeout(function () { hia.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px);"; }, 1800); setTimeout(function () { slider.style = "opacity: 1; transition: 1s all ease; transform: translateY(0px) scale(1);"; }, 2200); } </script>
+</html>
